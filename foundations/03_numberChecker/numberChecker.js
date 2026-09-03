@@ -1,8 +1,15 @@
 function numberChecker(number) {
-  if (number === 6) {
-    return true;
-  } else {
-    return false;
+  switch (number) {
+    case 1000:
+    case 10:
+      return true;
+
+    case 9:
+    case 6:
+      return false;
+
+    default:
+      return false;
   }
 }
 
